@@ -51,8 +51,15 @@ SE AGREGA EL LINK DEL VIDEO CON LA EJECUCION DEL PROGRAMA
 
 https://1drv.ms/v/c/420e760fd39caeac/IQDmYnk9Ef38SKo8wT1HKw8CAZ3XpyAh3z72q1FhAOm2DbY?e=4c8iem  
 
+Se agrega imagenes de la estructura de las clasese y ejecucion del programa
 <img width="1360" height="768" alt="Captura de pantalla 2026-02-07 171353" src="https://github.com/user-attachments/assets/3fa7455d-db2c-40cb-80d7-09f6c0e80c28" />
 <img width="1360" height="768" alt="Captura de pantalla 2026-02-07 173348" src="https://github.com/user-attachments/assets/fb3881bf-9340-4170-b762-9ddd1290edc1" />
 <img width="1360" height="768" alt="Captura de pantalla 2026-02-07 173535" src="https://github.com/user-attachments/assets/431441b7-eb6a-4d78-bd99-a6b6e61fd98d" />
 <img width="1360" height="768" alt="Captura de pantalla 2026-02-07 173557" src="https://github.com/user-attachments/assets/5c220eeb-f6bf-43f9-bf03-5de72c07d6f6" />
 <img width="1360" height="768" alt="Captura de pantalla 2026-02-07 173625" src="https://github.com/user-attachments/assets/75401678-1176-4943-a4cb-e6af60a1a6a0" />
+<img width="1360" height="768" alt="Captura de pantalla 2026-02-07 171602" src="https://github.com/user-attachments/assets/6e7df2f3-2968-483a-926e-bae53abe8cc1" />
+<img width="1360" height="768" alt="Captura de pantalla 2026-02-07 171639" src="https://github.com/user-attachments/assets/777c3cb9-8a9b-4e3c-8589-4b157e0aaf31" />
+<img width="1360" height="768" alt="Captura de pantalla 2026-02-07 172311" src="https://github.com/user-attachments/assets/39fb2d51-db4e-4947-8e37-5bc884013619" />
+<img width="1360" height="768" alt="Captura de pantalla 2026-02-07 172454" src="https://github.com/user-attachments/assets/13be904f-392b-4457-8b4d-717634a6e8a9" />
+Nota:  
+el resto de las capturas estan en el archivo pdf
