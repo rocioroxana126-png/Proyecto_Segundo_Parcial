@@ -1,40 +1,40 @@
- (Propuesta para "Tienda Online")
- 🛒 Sistema de Gestión de Ventas - Tienda Online
- Este proyecto es una aplicación de escritorio desarrollada en Python utilizando el framework PySide6 para la interfaz gráfica. 
- El sistema permite gestionar el ciclo de vida de una venta (CRUD), incluyendo el cálculo automático de impuestos y la persistencia de
- datos en una base de datos SQL.
- 🏗️ Arquitectura del Proyecto
- El software ha sido diseñado siguiendo principios de programación orientada a objetos (POO) y una arquitectura en capas para 
- facilitar el mantenimiento:
- Capa de Interfaz (UI): Gestionada con PySide6. 
- Implementa validaciones en tiempo real y retroalimentación mediante QMessageBox.
- Capa de Dominio (Modelos):
- Contiene las clases Cliente, ProductoBase y Venta, las cuales encapsulan la lógica de negocio y cálculos de subtotales/totales.
- Capa de Datos (DAO): Implementa el patrón Data Access Object para centralizar las operaciones SQL 
- (Insertar, Actualizar, Eliminar, Buscar), separando la lógica de la base de datos de la interfaz.
- 🚀 Características Principales
- Cálculo Automático: La aplicación calcula el Subtotal y el Total (incluyendo un IVA del 15%)
- de forma dinámica mientras se edita latabla de productos.
- Validaciones Robustas: 
- * Control de longitud de caracteres para códigos y nombres.Verificación de existencia previa de facturas para evitar duplicados.
- Manejo de excepciones para formatos numéricos inválidos.Persistencia SQL:
- Conexión eficiente para el almacenamiento físico de las transacciones.
-🛠️ Tecnologías Utilizadas
-Lenguaje:Python 
-Interfaz Gráfica: PySide6 (Qt for Python)Base de Datos: SQL Server / Azure SQL (Compatible con T-SQL)Herramientas:
-Qt Designer para el diseño de interfaces (.ui).
-📋 Estructura de Clases
-Entidades de Dominio
-ProductoBase:
-Gestiona los datos del artículo, precio y unidades. Incluye propiedades decoradas con @property para el cálculo automático
- de:$$Subtotal = Precio \times Unidades$$$$Total = Subtotal \times 1.15$$Cliente:
-Almacena la información de identificación y contacto del comprador.
-Venta: Clase integradora que relaciona un cliente con un producto para conformar una factura.
-Acceso a Datos (DAO)La clase VentaDAO centraliza las consultas:_INSERT: Registra la cabecera y el detalle en la tablaVentas.
-_SELECT: Recupera información mediante el IdFactura._UPDATE / _DELETE: Permite el mantenimiento de registros existentes.
-SE AGREGA EL LINK DEL VIDEO CON LA EJECUCION DEL PROGRAMA
+ (Propuesta para "Tienda Online")  
+ 🛒 Sistema de Gestión de Ventas - Tienda Online  
+ Este proyecto es una aplicación de escritorio desarrollada en Python utilizando el framework PySide6 para la interfaz gráfica.   
+ El sistema permite gestionar el ciclo de vida de una venta (CRUD), incluyendo el cálculo automático de impuestos y la persistencia de  
+ datos en una base de datos SQL.  
+ 🏗️ Arquitectura del Proyecto  
+ El software ha sido diseñado siguiendo principios de programación orientada a objetos (POO) y una arquitectura en capas para   
+ facilitar el mantenimiento:  
+ Capa de Interfaz (UI): Gestionada con PySide6.   
+ Implementa validaciones en tiempo real y retroalimentación mediante QMessageBox.  
+ Capa de Dominio (Modelos):  
+ Contiene las clases Cliente, ProductoBase y Venta, las cuales encapsulan la lógica de negocio y cálculos de subtotales/totales.  
+ Capa de Datos (DAO): Implementa el patrón Data Access Object para centralizar las operaciones SQL   
+ (Insertar, Actualizar, Eliminar, Buscar), separando la lógica de la base de datos de la interfaz.   
+ 🚀 Características Principales   
+ Cálculo Automático: La aplicación calcula el Subtotal y el Total (incluyendo un IVA del 15%)  
+ de forma dinámica mientras se edita latabla de productos.  
+ Validaciones Robustas:   
+ * Control de longitud de caracteres para códigos y nombres.Verificación de existencia previa de facturas para evitar duplicados.  
+ Manejo de excepciones para formatos numéricos inválidos.Persistencia SQL:  
+ Conexión eficiente para el almacenamiento físico de las transacciones.  
+🛠️ Tecnologías Utilizadas  
+Lenguaje:Python   
+Interfaz Gráfica: PySide6 (Qt for Python)Base de Datos: SQL Server / Azure SQL (Compatible con T-SQL)Herramientas:  
+Qt Designer para el diseño de interfaces (.ui).  
+📋 Estructura de Clases  
+Entidades de Dominio  
+ProductoBase:  
+Gestiona los datos del artículo, precio y unidades. Incluye propiedades decoradas con @property para el cálculo automático  
+ de:$$Subtotal = Precio \times Unidades$$$$Total = Subtotal \times 1.15$$Cliente:  
+Almacena la información de identificación y contacto del comprador.  
+Venta: Clase integradora que relaciona un cliente con un producto para conformar una factura.  
+Acceso a Datos (DAO)La clase VentaDAO centraliza las consultas:_INSERT: Registra la cabecera y el detalle en la tablaVentas.  
+_SELECT: Recupera información mediante el IdFactura._UPDATE / _DELETE: Permite el mantenimiento de registros existentes.  
+SE AGREGA EL LINK DEL VIDEO CON LA EJECUCION DEL PROGRAMA  
 
-https://1drv.ms/v/c/420e760fd39caeac/IQDmYnk9Ef38SKo8wT1HKw8CAZ3XpyAh3z72q1FhAOm2DbY?e=4c8iem
+https://1drv.ms/v/c/420e760fd39caeac/IQDmYnk9Ef38SKo8wT1HKw8CAZ3XpyAh3z72q1FhAOm2DbY?e=4c8iem  
 
 <img width="1360" height="768" alt="Captura de pantalla 2026-02-07 171353" src="https://github.com/user-attachments/assets/3fa7455d-db2c-40cb-80d7-09f6c0e80c28" />
 <img width="1360" height="768" alt="Captura de pantalla 2026-02-07 173348" src="https://github.com/user-attachments/assets/fb3881bf-9340-4170-b762-9ddd1290edc1" />
