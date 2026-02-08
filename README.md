@@ -1,9 +1,24 @@
- (Propuesta para "Tienda Online")  
+ (Proyecto "Tienda Online")  
  🛒 Sistema de Gestión de Ventas - Tienda Online  
  Este proyecto es una aplicación de escritorio desarrollada en Python utilizando el framework PySide6 para la interfaz gráfica.   
- El sistema permite gestionar el ciclo de vida de una venta (CRUD), incluyendo el cálculo automático de impuestos y la persistencia de  
- datos en una base de datos SQL.  
- 🏗️ Arquitectura del Proyecto  
+ El sistema permite gestionar el ciclo de vida de una venta (CRUD), incluyendo el cálculo automático de impuestos y la persistencia de datos en una base de datos SQL.  
+ ⚙️ Capa de Lógica de Negocio (Servicios)
+La clase VentaServicio es el componente central que maneja la lógica de control del aplicativo. Su responsabilidad principal es orquestar el flujo de datos entre la interacción del usuario y la persistencia en la base de datos.  
+Funcionalidades Clave del Servicio:  
+Orquestación del CRUD: Gestiona las operaciones de Crear, Leer, Actualizar y Eliminar invocando los métodos estáticos de VentaDAO  tras validar la integridad de los datos de entrada.  
+Gestión de Eventos de Interfaz: Conecta las señales de los componentes de PySide6 (clics de botones, cambios en celdas) con   métodos específicos de procesamiento.  
+Cálculos en Tiempo Real: Implementa el método calcular_totales_tabla, el cual reacciona a los cambios en la QTableWidget para   actualizar automáticamente el Subtotal y Total sin necesidad de refrescar la ventana.  
+Validación de Reglas de Negocio:  
+Controla que no existan facturas duplicadas antes de intentar una inserción.  
+Asegura que los campos obligatorios (ID Cliente, Nombre, Código de Producto) contengan información válida.  
+Maneja el formateo de datos, como el reemplazo de comas por puntos para asegurar la compatibilidad con tipos float de Python.  
+Flujo de Datos (Workflow):  
+Entrada: El usuario interactúa con la Ui_interfaz.  
+Validación: El VentaServicio captura los datos, limpia espacios en blanco (strip()) y verifica tipos de datos.  
+Modelado: Se instancian objetos de tipo Cliente y ProductoBase para estructurar la información.  
+Persistencia: Se delega el objeto Venta resultante al VentaDAO para su almacenamiento definitivo.  
+Feedback: El servicio utiliza QMessageBox para notificar al usuario el éxito o error de la operación y limpia la interfaz mediante el método limpiar().  
+ 🏗️ Arquitectura del Proyecto   
  El software ha sido diseñado siguiendo principios de programación orientada a objetos (POO) y una arquitectura en capas para   
  facilitar el mantenimiento:  
  Capa de Interfaz (UI): Gestionada con PySide6.   
